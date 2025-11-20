@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - TropiJuice Co.</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section id="checkout-cart"></section>
+  <p id="checkout-total"></p>
+
+  <form id="checkoutForm">
+    <label>Full Name:</label>
+    <input type="text" id="name" required>
+    <label>Address:</label>
+    <input type="text" id="address" required>
+    <label>Email:</label>
+    <input type="email" id="email" required>
+    <button type="submit" class="btn">Confirm Purchase</button>
+    <button type="button" onclick="clearCart()">Clear All</button>
+    <button type="button" onclick="window.location.href='shop.html'">Close</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 TropiJuice Co.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    displayCheckoutCart();
+    setupCheckout();
+  </script>
+</body>
+</html>
