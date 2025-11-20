@@ -1,0 +1,188 @@
+/* IA#2: Home Page Logo Styling */
+.home-logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* IA#2: Base body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Black background for contrast */
+    color: #fff;
+}
+
+/* IA#2: Header styling using Jamaican flag colours */
+header {
+    background-color: #009b3a; /* Jamaica green */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* IA#2: Navigation styling */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fed100; /* Jamaica gold */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #000; /* Black hover effect */
+}
+
+/* IA#2: Hero section styling */
+.hero {
+    background: linear-gradient(135deg, #009b3a, #fed100); /* Green to gold gradient */
+    text-align: center;
+    color: #000; /* Dark text for readability */
+    padding: 80px 20px;
+}
+
+.hero .btn {
+    background-color: #000; /* Black button */
+    color: #fed100; /* Gold text */
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: #009b3a; /* Green hover effect */
+    color: #fff;
+}
+
+/* IA#2: Product grid using Flexbox */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* IA#2: Individual product card styling */
+.product {
+    background-color: #222; /* Dark card for contrast */
+    border: 2px solid #fed100; /* Gold border */
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* IA#2: Product buttons */
+.product button {
+    background-color: #009b3a; /* Green */
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #fed100; /* Gold on hover */
+    color: #000; /* Black text */
+}
+
+/* IA#2: Form styling for login, register, checkout */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 30px auto;
+    background: #222; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #fed100; /* Gold borders */
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #009b3a; /* Green */
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fed100; /* Gold hover */
+    color: #000; /* Black text */
+}
+
+/* IA#2: Cart table styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #222; /* Dark table background */
+}
+
+table th, table td {
+    border: 1px solid #fed100; /* Gold border */
+    padding: 10px;
+    text-align: center;
+}
+
+/* IA#2: Footer styling */
+footer {
+    background-color: #000; /* Black footer */
+    color: #fed100; /* Gold text */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 40px;
+}
+
+/* IA#2: Responsive Design */
+@media (max-width: 950px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
